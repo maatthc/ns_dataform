@@ -1,0 +1,58 @@
+{
+    "isReadOnly": false,
+    "commitMode": "Immediate",
+    "validationMode": "Immediate",
+    "propertyAnnotations":
+    [
+      {
+        "name": "name",
+        "displayName": "Name",
+        "index": 0,
+        "hintText": "Your name",
+        "required": "true"
+      },
+      {
+        "name": "email",
+        "displayName": "Email",
+        "index": 1,
+        "required": "true",
+        "hintText": "your@email",
+        "imageResource": "res://ic_dataform_guest",
+        "editor": "Email"
+      },
+      {
+        "name": "dateBirth",
+        "displayName": "Date of Birth",
+        "index": 2,
+        "imageResource": "res://ic_dataform_calendar",
+        "editor": "DatePicker"
+      },
+      {
+        "name": "sex",
+        "displayName": "Sex",
+        "index": 3,
+        "editor": "SegmentedEditor",
+        "valuesProvider": ["Male", "Female", "Others"]
+      },
+      {
+        "name": "loyalty",
+        "displayName": "Loyalty Card",
+        "index": 4,
+        "imageResource": "res://ic_dataform_table",
+        "editor": "Number"
+      },
+      {
+        "name": "phone",
+        "displayName": "Mobile number",
+        "index": 5,
+        "required": "false",
+        "imageResource": "res://ic_dataform_phone",
+        "editor": "Phone"
+      },
+      {
+        "name": "profileImageFileName",
+        "hidden": "true"
+      }
+
+    ]
+  }

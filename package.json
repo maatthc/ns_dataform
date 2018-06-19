@@ -1,12 +1,12 @@
 {
-        "name": "ns_basic",
-        "version": "1.0.0",
+	"name": "ns_dataform",
+	"version": "1.0.0",
 	"description": "NativeScript Application",
 	"license": "SEE LICENSE IN <your-license-filename>",
 	"readme": "NativeScript Application",
-	"repository": "https://github.com/maatthc/ns_basic.git",
+	"repository": "https://github.com/maatthc/ns_dataform.git",
 	"nativescript": {
-		"id": "br.maat.ns_basic",
+		"id": "br.maat.ns_dataform",
 		"tns-ios": {
 			"version": "4.1.0"
 		}
@@ -23,6 +23,7 @@
 		"@angular/router": "~6.0.0",
 		"nativescript-angular": "~6.0.0",
 		"nativescript-theme-core": "~1.0.4",
+		"nativescript-ui-dataform": "^3.6.1",
 		"reflect-metadata": "~0.1.8",
 		"rxjs": "~6.1.0",
 		"tns-core-modules": "~4.1.0",

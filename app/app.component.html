@@ -1,1 +1,8 @@
-<Label text="Hello World" horizontalAlignment="center"></Label>
+<ActionBar title="Settings" automationText="ActionBar" class="action-bar">
+    <NavigationButton (tap)="goBack()" text="Go Back"></NavigationButton>
+    <ActionItem tap="saveChangesSettings" padding="20" margin="30" android:text="DONE" ios:text="Done" ios.position="right"></ActionItem>
+</ActionBar>
+<GridLayout rows="*">
+<RadDataForm row="0" tkExampleTitle tkToggleNavButton [source]="settings" [metadata]="settingsMetadata"> 
+</RadDataForm>
+</GridLayout>
