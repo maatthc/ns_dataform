@@ -12,8 +12,6 @@ export class AppComponent {
     private _settingsMetadata: any;
 
     constructor(){
-        let currentDate = new Date();
-        console.log(currentDate.toDateString());
         let documents = fs.knownFolders.currentApp();
         let jsonSettingsFile = documents.getFile('./settings-metadata.json');
         jsonSettingsFile.readText().then((content)=>{
