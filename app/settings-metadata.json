@@ -51,7 +51,8 @@
       },
       {
         "name": "profileImageFileName",
-        "hidden": "true"
+        "hidden": "true",
+        "ignore": true
       }
 
     ]
