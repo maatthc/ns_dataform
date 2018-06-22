@@ -7,9 +7,3 @@ export interface Settings {
     phone: number;
     profileImageFileName: string;
 }
-
-export interface Lixo {
-    name: string,
-    email: string,
-    dateBirth: number,
-}

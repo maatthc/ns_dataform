@@ -1,7 +1,7 @@
 {
     "isReadOnly": false,
     "commitMode": "Immediate",
-    "validationMode": "Immediate",
+    "validationMode": "OnLostFocus",
     "propertyAnnotations":
     [
       {
@@ -9,7 +9,8 @@
         "displayName": "Name",
         "index": 0,
         "hintText": "Your name",
-        "required": "true"
+        "required": "true",
+        "imageResource": "res://ic_dataform_guest"
       },
       {
         "name": "email",
@@ -39,7 +40,8 @@
         "displayName": "Loyalty Card",
         "index": 4,
         "imageResource": "res://ic_dataform_table",
-        "editor": "Number"
+        "editor": "Number",
+        "hintText": "0000 0000 0000 0000"
       },
       {
         "name": "phone",
@@ -47,7 +49,9 @@
         "index": 5,
         "required": "false",
         "imageResource": "res://ic_dataform_phone",
-        "editor": "Phone"
+        "editor": "Phone",
+        "hintText": "000 0000 000"
+
       },
       {
         "name": "profileImageFileName",
