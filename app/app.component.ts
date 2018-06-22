@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Settings } from './settings';
+import { Settings, Lixo } from './settings';
 import * as fs from "file-system";
 
 @Component({
@@ -10,6 +10,7 @@ import * as fs from "file-system";
 export class AppComponent { 
     private _settings: Settings;
     private _settingsMetadata: any;
+    private _lixos: Lixo;
 
     constructor(){
         let documents = fs.knownFolders.currentApp();
@@ -34,6 +35,11 @@ export class AppComponent {
             phone: 0,
             profileImageFileName: "profile.png",
         };
+        // this._lixos = {
+        //     name: "You name",
+        //     email: "your@email",
+        //     dateBirth: 0.1,
+        // };
         console.dir(this._settings);
     }
 
@@ -41,7 +47,15 @@ export class AppComponent {
         return this._settings;
     }
     
+    get lixos(): Lixo {
+        return this._lixos;
+    }
+
     get settingsMetadata(): any {
         return this._settingsMetadata;
+    }
+
+    public saveChangesSettings(){
+        console.dir(this._lixos);
     }
 }

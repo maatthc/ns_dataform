@@ -1,8 +1,18 @@
 <ActionBar title="Settings" automationText="ActionBar" class="action-bar">
     <NavigationButton (tap)="goBack()" text="Go Back"></NavigationButton>
-    <ActionItem tap="saveChangesSettings" padding="20" margin="30" android:text="DONE" ios:text="Done" ios.position="right"></ActionItem>
+    <ActionItem (tap)="saveChangesSettings()" padding="20" margin="30" android:text="DONE" ios:text="Done" ios.position="right"></ActionItem>
 </ActionBar>
 <GridLayout rows="*">
-<RadDataForm row="0" tkExampleTitle tkToggleNavButton [source]="settings" [metadata]="settingsMetadata"> 
+<!-- <RadDataForm row="0" tkExampleTitle tkToggleNavButton [source]="settings" [metadata]="settingsMetadata">  -->
+<RadDataForm row="0" tkExampleTitle tkToggleNavButton [source]="lixos"> 
+        <TKEntityProperty tkDataFormProperty name="dateBirth" index="0">
+                <TKPropertyEditor tkEntityPropertyEditor type="Decimal"></TKPropertyEditor>
+        </TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty name="name" displayName="Contact Name" index="1">
+                <TKPropertyEditor tkEntityPropertyEditor type="Text"></TKPropertyEditor>
+        </TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty name="email" displayName="Contact email" index="2">
+                <TKPropertyEditor tkEntityPropertyEditor type="Text"></TKPropertyEditor>
+        </TKEntityProperty>
 </RadDataForm>
 </GridLayout>
