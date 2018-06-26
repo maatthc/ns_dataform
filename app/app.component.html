@@ -4,9 +4,16 @@
 </ActionBar>
 <GridLayout rows="*">
 <RadDataForm row="0" tkExampleTitle tkToggleNavButton [source]="settings" [metadata]="settingsMetadata">
-    <!-- Workaround for DatePicker issue -->
-        <TKEntityProperty tkDataFormProperty name="dateBirth" index="2">
-                <TKPropertyEditor tkEntityPropertyEditor type="DatePicker"></TKPropertyEditor>
-        </TKEntityProperty>
+        <!-- Workaround for DatePicker issue -->
+        <!-- https://github.com/telerik/nativescript-ui-feedback/issues/218 -->
+            <TKEntityProperty tkDataFormProperty name="dateBirth" index="2">
+                    <TKPropertyEditor tkEntityPropertyEditor type="DatePicker"></TKPropertyEditor>
+            </TKEntityProperty>
+
+        <!-- Workaround for default number values at 100 issue -->
+        <!-- https://github.com/telerik/nativescript-ui-feedback/issues/177 -->
+            <TKEntityProperty tkDataFormProperty index="4" name="loyalty" hintText="0000 0000 0000 0000" displayName="loyalty Card">
+                <TKPropertyEditor tkEntityPropertyEditor type="Number"></TKPropertyEditor>
+            </TKEntityProperty>
 </RadDataForm>
 </GridLayout>
